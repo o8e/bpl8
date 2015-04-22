@@ -1,11 +1,13 @@
 var gulp = require('gulp'),
       sass = require('gulp-ruby-sass'),
       concat = require('gulp-concat'),
-      uglify = require('gulp-uglify');
+      uglify = require('gulp-uglify'),
+      minify = require('gulp-minify-css');
 
 gulp.task('sass', function() {
   return sass('src/scss/style.scss')
   .on('error', function(err) { console.error('Error!', err.message); })
+  .pipe(minify({compatibility: 'ie8'}))
   .pipe(gulp.dest('dist/css'));
 });
 
