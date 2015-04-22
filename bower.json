@@ -1,0 +1,21 @@
+{
+  "name": "bpl8",
+  "version": "0.0.0",
+  "authors": [
+    "Ollie Tribe <tribe@myself.com>"
+  ],
+  "description": "My personal solid boilerplate.",
+  "license": "WTFPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation-sass": "~5.5.2",
+    "normalize.css": "~3.0.3",
+    "modernizr": "~2.8.3"
+  }
+}
