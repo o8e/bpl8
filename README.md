@@ -1,5 +1,5 @@
 ## bpl8
-My personal boilerplate and build system, decent HTML5 base with normalize, modernizr and bower and gulp already configured for styles and scripts. I usually use Foundation sass, so I've just imported the grid component initially.
+My personal boilerplate and build system.
 
 ###### Installation
 In the unlikely event that you decide you wish to use this as a base for your project, here's a quick run down of what you need to do.
