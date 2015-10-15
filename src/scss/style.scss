@@ -2,7 +2,7 @@
  * Core stylesheet
  */
 
-@import '../vendor/normalize-scss/normalize';
+@import '../vendor/reset-scss/reset';
 @import '../vendor/foundation-sass/scss/foundation/components/grid';
 
-@import 'partials/demo';
+@import 'partials/base';
