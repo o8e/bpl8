@@ -1,14 +1,16 @@
 var gulp = require('gulp'),
-      sass = require('gulp-ruby-sass'),
+      sass = require('gulp-sass'),
       concat = require('gulp-concat'),
       uglify = require('gulp-uglify'),
-      minify = require('gulp-minify-css');
+      livereload = require('gulp-livereload'),
+      cssnano = require('gulp-cssnano');
 
 gulp.task('sass', function() {
-  return sass('src/scss/style.scss')
-  .on('error', function(err) { console.error('Error!', err.message); })
-  .pipe(minify({compatibility: 'ie8'}))
-  .pipe(gulp.dest('dist/css'));
+  gulp.src('src/scss/style.scss')
+    .pipe(sass())
+    .pipe(cssnano())
+    .pipe(gulp.dest('dist/css'))
+    .pipe(livereload());
 });
 
 gulp.task('watch', function() {
